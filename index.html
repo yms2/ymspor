@@ -5,133 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        *{ margin: 0; padding: 0;}
-        ul,li{list-style: none;}
-        a{text-decoration: none;}
-
-        #wrap{width:100%}
-        #wrap > div{ width: 100%; height:100vh}
-        #wrap > div:nth-child(1){/*background-color: burlywood;*/ background:url(./images/main.png) no-repeat 0 0;}
-        #wrap > div:nth-child(2){background:url(../profile.png) no-repeat 0 0;}
-        #wrap > div:nth-child(3){background-color: rgb(135, 222, 208);}
-        #wrap > div:nth-child(4){background-color: rgb(135, 183, 222);}
-        #wrap > div:nth-child(5){background-color: rgb(222, 135, 208);}
-        #wrap > div > div{margin: 0 auto; width: 1500px;  height: 100vh;
-                          /* background-color:rgba(255, 244, 146, 0.5); */
-                          }
-        #main .header{ width: 100%; height: 120px;} 
-        #main .logo{float: left; margin:  20px 0 0 0;  
-                    width: 180px; height: 80px;  color: #716E64;} 
-        #main .nav{ float: right; margin: 50px 0 0 0;}
-        #main .nav li{ float: left; margin-right: 20px;}     
-        #main .nav a{font-size: 28px; font-weight: 700; color:#BFBFBF; 
-                    } 
-        #main .nav li.on a{color:#000;}
-
-        #main h2{ float: left; width: 100%;
-                  font-size:60px; text-align: left;
-                  font-weight: 500;
-                  color: #FFFFFF;
-
-                  padding-right:70px; box-sizing: border-box;}
-        #main p{float:left; margin:20px 100px 0 0; 
-                font-size:30px; color: #D6CBC2;}
-        #main .H{margin-top: 500px;}
-        #main .menu{
-            width: 750px;height: 50px;
-            margin: -150px 200px;
-            float: left;
-        }
-        #main .menu p{
-            float: left;
-            font-size: 20px;
-        }
-        #main .menu a{
-            color: #FFFFFF;
-            font-weight: 700;
-        }
-        #profile{
-            width: 100%;
-            height:420px;
-            background-color:aqua;
-        }
-
-        #q_mn{
-            position: absolute; right:20px; top: 300px; z-index: 9999;
-            width:120px; height:200px; border-radius: 6px;
-            border:1px solid #ccc;
-            background-color: #fff; 
-        }
-        #q_mn ul.nav{ margin:0 auto; margin-top:30px; list-style:none; width:50px;}	
-        #q_mn ul.nav li{ margin-bottom:10px}   
-        #q_mn ul.nav li a{ color: #ccc;}
-        #q_mn ul.nav li.on a{ color: rgb(15, 15, 15);}
-
-        #skill{}
-        #skill .in_skill{ display: flex; justify-content: center; align-items: center;}
-        #skill .skill_list{}
-        #skill .skill_list > li{float: left; margin-right: 100px; text-align: center;}
-        #skill .skill_list > li > div{ width: 50px; height:300px; border:1px solid #000;
-                                       position: relative; overflow: hidden;}
-        #skill .skill_list > li > div > .in_box{width: 50px; height:300px; background-color: #716E64;
-                                              position: absolute; top:300px; left: 0; }
-        #project_1{}                                             
-        #project_1 .in_project_1{display: flex; justify-content: center; align-items: center;}
-        #project_1 .list{ width: 1000px; }
-        #project_1 .list > li{float: left;  width: 500px; height: 600px;
-                             border: 1px solid #000; box-sizing: border-box;
-                             } 
-        #project_1 .output{ background:url(../screen.png) no-repeat 0 100px; 
-                            background-size: 100%;}
-        #project_1 .output > div{width: 420px; height: 270px; 
-                                 border: 1px solid #000; box-sizing: border-box;
-                                 margin: 120px 0 0 39px;}            
-    </style>
+<link rel="stylesheet" href="./reset.css">
+<link rel="stylesheet" href="./style.css">
     <script src="js/jquery.js"></script>
-    <script>
-        $(function(){
-            var menu = $('.nav > li');
-            var contents = $('#wrap > div');  
 
-            $('.nav> li').click(function(event){
-                event.preventDefault();
-                
-                var tg = $(this);
-                var i = tg.index();
-                
-                var section = $('#wrap > div').eq(i);
-                var tt = section.offset().top;
-                
-                $('html, body').stop().animate({scrollTop:tt});
-            });
-            //메뉴에 addclass를 적용
-            // $(window).scroll(function(){
-            //     var sct = $(window).scrollTop();
-                
-            //     $('#wrap > div').each(function(){
-            //         var tg = $(this);
-            //         var i = tg.index();
-            //         if(tg.offset().top <= sct){
-            //             $('.nav > li').removeClass('on');
-            //             $('.nav > li').eq(i).addClass('on');
-            //     }
-            // });
-            // $(window).scroll(function(){
-            // var sct = $(window).scrollTop();
-            
-            // contents.each(function(){
-            //     var tg = $(this);
-            //     var i = tg.index();
-            //     if(tg.offset().top <= sct){
-            //         menu.removeClass('on');
-            //         menu.eq(i).addClass('on');
-            //     }
-            // });
-
-
-        });
-    </script>
 </head>
 <body>
     <div id="wrap">
@@ -140,9 +17,6 @@
             <div class="in_main">
               <div class="header">
                  <h1 class="logo"></h1>
-                 <ul class="nav">
-                     <li><a href="#">MENU</a></li>
-                  </ul>
                   
               </div> 
                     <p class="H">HELLO</p>    
@@ -160,67 +34,86 @@
         <!-- 소개 -->
         <div id="profile">
             <div class="in_profile">
-                
+                <div class="p1">
+                    <p></p>
+                </div>
+                <div class="p2"></div>
             </div>
         </div>
         <!-- 스킬 -->
         <div id="skill">  
             <div class="in_skill">
-                
-               <ul class="skill_list">
-                   <li>
-                       <div>
-                           <div class="in_box in_box01">80%</div>
-                       </div>
-                       <h5>html</h5>
-                   </li>
-                   <li>
-                        <div>
-                            <div class="in_box in_box02">50%</div>
+                <div>
+                    <ul>
+                       <li><h2>SKILLSET</h2></li>
+                       <li><p>사용 언어/기술</p></li>
+                       <li class="sk_txt"><p>CSS/HTML을 시작해 다양한 언어를 익혔으며, 앞으로 많은 언어를 익힐 계획에 있<br>
+                        습니다 Java-Script, j-Query ,react , node-js등을 더 잘 사용할 수 있도록 노력<br>
+                        하고 있습니다. 다음은 제가 다룰 수 있는 언어와 기술입니다.</p></li>
+                        <li class="sk_per">
+                            <ul>
+                                <li><p>75%~100% : 자주 사용하고 거의 모든 기능을 구현 가능한 상태</p></li>
+                                <li><p>50%~74% : 다룰 수는 있지만 아직 이해가 부족하고 한정적으로 다룰 수 있는 상태</p></li>
+                                <li><p>25%~49% : 막 배우기 시작해 다루기 어려운 상태</p></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container">
+                <div class="per">
+                    <div class="percent" style="--clr:#04fc43;--num:85;">
+                        <div class="dot"></div>
+                        <svg>
+                            <circle cx="70" cy ="70" r="70"></circle>
+                            <circle cx="70" cy ="70" r="70"></circle>
+                        </svg>
+                        <div class="number">
+                            <h2>85<span>%</span></h2>
+                            <p>Html5</p>
                         </div>
-                        <h5>css</h5>
-                   </li>
-                   <li>
-                        <div>
-                            <div class="in_box in_box03">100%</div>
+                    </div>
+                </div>
+                <div class="per">
+                    <div class="percent1" style="--clr:#04fc43;--num:75;">
+                        <div class="dot1"></div>
+                        <svg>
+                            <circle cx="70" cy ="70" r="70"></circle>
+                            <circle cx="70" cy ="70" r="70"></circle>
+                        </svg>
+                        <div class="number">
+                            <h2>75<span>%</span></h2>
+                            <p>Css3</p>
                         </div>
-                        <h5>jquery</h5>
-                   </li>
-                   <li>
-                        <div>
-                            <div class="in_box in_box04">90%</div>
+                    </div>
+                </div>
+                <div class="per">
+                    <div class="percent2" style="--clr:#04fc43;--num:50;">
+                        <div class="dot2"></div>
+                        <svg>
+                            <circle cx="70" cy ="70" r="70"></circle>
+                            <circle cx="70" cy ="70" r="70"></circle>
+                        </svg>
+                        <div class="number">
+                            <h2>50<span>%</span></h2>
+                            <p>Js</p>
                         </div>
-                        <h5>node.js</h5>
-                  </li>
-
-               </ul>
-
+                    </div>
+                </div>
+                <div class="per">
+                    <div class="percent3" style="--clr:#04fc43;--num:35;">
+                        <div class="dot3"></div>
+                        <svg>
+                            <circle cx="70" cy ="70" r="70"></circle>
+                            <circle cx="70" cy ="70" r="70"></circle>
+                        </svg>
+                        <div class="number">
+                            <h2>35<span>%</span></h2>
+                            <p>J-Query</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <script>
-             $(document).ready(function(){
-                var scene01Num = 1;
-
-                $(window).scroll(function(){
-                    var scrollTop = $(document).scrollTop();
-                    if(scrollTop > 1800 && scene01Num == 1) {
-                        scene01Num = 0;
-                        $('#skill .in_box01').stop().delay(0).css({top:'300px'}).animate({top:'150px'},1000);
-                        $('#skill .in_box02').stop().delay(500).css({top:'300px'}).animate({top:'30px'},1000);
-                        $('#skill .in_box03').stop().delay(1000).css({top:'300px'}).animate({top:'120px'},1000);
-                        $('#skill .in_box04').stop().delay(1500).css({top:'300px'}).animate({top:'100px'},1000);
-                    }
-                    else if(scrollTop < 1500 && scene01Num == 0){
-                        scene01Num = 1;
-                        $('#skill .in_box01').stop().css({top:'150px'}).animate({top:'300px'},1000);
-                        $('#skill .in_box02').stop().css({top:'30px'}).animate({top:'300px'},1000); 
-                        $('#skill .in_box03').stop().css({top:'120px'}).animate({top:'300px'},1000);
-                        $('#skill .in_box04').stop().css({top:'100px'}).animate({top:'300px'},1000);
-
-                    }
-                });
-             });
-
-            </script>
+                </div>
         </div>
         <!-- 프로젝트1 -->
         <div id="project_1">
@@ -267,5 +160,48 @@
             );
         });
     </script>    
+        <script>
+            $(function(){
+                var menu = $('.nav > li');
+                var contents = $('#wrap > div');  
+    
+                $('.nav> li').click(function(event){
+                    event.preventDefault();
+                    
+                    var tg = $(this);
+                    var i = tg.index();
+                    
+                    var section = $('#wrap > div').eq(i);
+                    var tt = section.offset().top;
+                    
+                    $('html, body').stop().animate({scrollTop:tt});
+                });
+                //메뉴에 addclass를 적용
+                // $(window).scroll(function(){
+                //     var sct = $(window).scrollTop();
+                    
+                //     $('#wrap > div').each(function(){
+                //         var tg = $(this);
+                //         var i = tg.index();
+                //         if(tg.offset().top <= sct){
+                //             $('.nav > li').removeClass('on');
+                //             $('.nav > li').eq(i).addClass('on');
+                //     }
+                // });
+                // $(window).scroll(function(){
+                // var sct = $(window).scrollTop();
+                
+                // contents.each(function(){
+                //     var tg = $(this);
+                //     var i = tg.index();
+                //     if(tg.offset().top <= sct){
+                //         menu.removeClass('on');
+                //         menu.eq(i).addClass('on');
+                //     }
+                // });
+    
+    
+            });
+        </script>
 </body>
 </html>
