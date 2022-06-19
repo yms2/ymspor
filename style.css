@@ -262,12 +262,81 @@
 
 #project_1{}                                             
 #project_1 .in_project_1{display: flex; justify-content: center; align-items: center;}
-#project_1 .list{ width: 1000px; }
-#project_1 .list > li{float: left;  width: 500px; height: 600px;
-                     border: 1px solid #000; box-sizing: border-box;
-                     } 
-#project_1 .output{ background:url(../screen.png) no-repeat 0 100px; 
-                    background-size: 100%;}
-#project_1 .output > div{width: 420px; height: 270px; 
-                         border: 1px solid #000; box-sizing: border-box;
-                         margin: 120px 0 0 39px;}    
+#project_1 .list{ 
+    float: left;
+    width: 1410px;height:600px;
+    }
+#project_1 .list .pro1{
+    position: relative;
+    z-index: 1;
+    float: left;
+    width: 300px;height: 300px;
+    background-color: #309ad3;
+    color: white;
+}
+#project_1 .list .pro1 span{
+    margin-left: 50px;
+    font-size: 70px;
+    line-height: 180px;
+}
+#project_1 .list .pro1 p{
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: end;
+    margin-right: 15px;
+}
+#project_1 .list .pro2{
+    float: left;
+    margin-left: -90px;
+    width: 290px;height: 290px;border-radius: 50%;
+    background-color: #020202;
+    border: 5px solid #C13E3E;
+}
+#project_1 .list .pro2 p{
+    text-align: center;
+    margin-top: 53px;
+    font-size: 20px;
+    color: white;
+}
+#project_1 .list .pro3{
+    position: relative;
+    z-index: 1;
+    float: left;
+    margin-left: 90px;
+    width: 300px;height: 300px;
+    background-color: #BFBFBF;
+}
+#project_1 .list .pro4{
+    float: left;
+    margin-left: -90px;
+    width: 300px;height: 300px;border-radius: 50%;
+    background-color: #ffffff;
+}
+#project_1 .list .pro5{
+    position: relative;
+    z-index: 1;
+    margin-left:300px;
+    float: left;
+    width: 300px;height: 300px;
+    background-color: #BFBFBF;
+}
+#project_1 .list .pro6{
+    float: left;
+    margin-left: -90px;
+    width: 300px;height: 300px;border-radius: 50%;
+    background-color: #ffffff;
+}
+#project_1 .list .pro7{
+    position: relative;
+    z-index: 1;
+    float: left;
+    margin-left: 90px;
+    width: 300px;height: 300px;
+    background-color: #BFBFBF;
+}
+#project_1 .list .pro8{
+    float: left;
+    margin-left: -90px;
+    width: 300px;height: 300px;border-radius: 50%;
+    background-color: #ffffff;
+}
