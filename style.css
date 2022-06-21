@@ -4,7 +4,7 @@
 #wrap > div:nth-child(2){background-color: #fff;}
 #wrap > div:nth-child(3){background-color: #222222}
 #wrap > div:nth-child(4){background-color: rgb(135, 183, 222);}
-#wrap > div:nth-child(5){background-color: rgb(222, 135, 208);}
+#wrap > div:nth-child(5){background-color:#ecebe3 }
 #wrap > div > div{margin: 0 auto; width: 1500px;  height: 100vh;
                   /* background-color:rgba(255, 244, 146, 0.5); */
                   }
@@ -56,50 +56,73 @@
     justify-content: center;
 }
 #profile .in_profile{
-    display: flex;
-    justify-content: space-around;
-    align-items: top;
     width: 1300px;
-    height: 850px;
-    background-color: #cacaca;
-    border: 1px solid rgb(29, 28, 28);
+    height: 750px;
+    background-color: #ecebe3;
+    border: 1px solid #ecebe3;
 }
-#profile .in_profile .p1 p{
-    margin: 20px 0 0 20px;
-    font-size: 20px;
+#profile .in_profile .p1 h2{
+    margin-left: 40px;
+    font-size: 40px;
 }
 #profile .p1{
-    float: left;
-    width: 340px;
-    height: 400px;
-    border: 1px solid #000;
-}
-#profile .p1 .p1_b img{
-    margin-left: 18px;
-    width: 120px; height: 100px;
-}
-#profile .p1 img{
-    margin-top: 50px;
-    width: 140px;height: 100px;
-}
-#profile .p2 h2{
-    margin-top: 80px;
-    font-size: 35px;
-}
-#profile .archiving{
+    width: 100%;
+    height: 80px;
+    line-height: 100px;
 }
 #profile .p2{
-    float: right;
-    width: 800px;
-    height: 400px;
-    border: 1px solid #000;
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    width:100%;height: 650px;
 }
-#profile .p2 p{
-    margin-top: 70px;
+#profile .p2 .p1_1{
+    float: left;
+    margin-left: 15px;
+    width: 400px; height: 650px;
 }
-
-#archiving{
+#profile .p2 .p1_2{
+    float: left;
+    margin-left: 25px;
+    width: 800px;height: 650px;
+}
+#profile .p2 .p1_1 .img{
+    margin-top: 15px;
+    width: 300px; height: 200px;
+    background-color: #2c0f0f;
+}
+#profile .p2 .p1_1 .name{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 60px;
+}
+#profile .p2 .p1_1 .add{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 90px;
+}
+#profile .p2 .p1_1 .add p{
+    margin-top: 15px;
+}
+#profile .p2 .p1_1 .add span{
+    font-weight: 500;
+}
+#profile .p2 .p1_2 .intro{
+    margin-top: 120px;
+    font-size: 20px;
+    font-weight: 700;
+}
+#profile .p2 .p1_2 .intro2{
+    margin-top: 35px;
+}
+#profile .p2 .p1_2 .intro2 p{
+    margin-top: 10px;
+}
+#profile .p2 .p1_2 .intro3{
+    margin-top: 35px;
+}
+#profile .p2 .p1_2 .intro3 p{
+    margin-top: 10px;
 }
 #skill{
     display: flex;
@@ -342,4 +365,24 @@
     margin-left: -90px;
     width: 300px;height: 300px;border-radius: 50%;
     background-color: #ffffff;
+}
+#end{
+    display: flex;
+    align-items: center;
+}
+#end .in_end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 1300px; height: 600px;
+    background-color: rgb(204, 190, 201);;
+    border: 1px solid #ecebe3;
+}
+#end .in_end h2{
+    font-size: 80px;
+}
+#end .in_end p{
+    margin-top: 70px;
+    font-size: 20px;
 }
