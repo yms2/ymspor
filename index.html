@@ -35,11 +35,22 @@
         <div id="profile">
             <div class="in_profile">
                 <div class="p1">
-                    <p></p>
+                    <p>About Me</p>
+                        <!-- <p class="p1_b"><img src="./images/blog.PNG" alt=""></p>
+                        <p><img src="./images/github.png" alt=""></p> -->
                 </div>
-                <div class="p2"></div>
+                <div class="p2">
+                    <h2>책임감을 가장 중요시 하는 유민성입니다</h2>
+                    <p>한국폴리텍대학에서 전공을 통해 C++, C# 등을 배웠습니다<br>
+                    졸업 후, 군대에서 진로를 고민하게 되었습니다.<br>
+                    코리아IT아카데미에서 프론트앤드 과정을 이수했고 백앤드 과정을 배울 예정입니다.<br>
+                    최근에는 노드JS와 리엑트에 관심이 생겨 공부하고 있는 중입니다.<br>
+                    사용자들 편리하게 사용할 웹을 만드는 웹 프로그래머가 되기 위해 노력중인 유민성입니다.<br></p>
+                </div>
+                
             </div>
         </div>
+        <!-- <div id="archiving"></div> -->
         <!-- 스킬 -->
         <div id="skill">  
             <div class="in_skill">
@@ -75,7 +86,7 @@
                 </div>
                 <div class="per">
                     <div class="percent1" style="--clr:#04fc43;--num:75;">
-                        <div class="dot1"></div>
+                        <div class="dot"></div>
                         <svg>
                             <circle cx="70" cy ="70" r="70"></circle>
                             <circle cx="70" cy ="70" r="70"></circle>
@@ -88,7 +99,7 @@
                 </div>
                 <div class="per">
                     <div class="percent2" style="--clr:#04fc43;--num:50;">
-                        <div class="dot2"></div>
+                        <div class="dot"></div>
                         <svg>
                             <circle cx="70" cy ="70" r="70"></circle>
                             <circle cx="70" cy ="70" r="70"></circle>
@@ -101,7 +112,7 @@
                 </div>
                 <div class="per">
                     <div class="percent3" style="--clr:#04fc43;--num:35;">
-                        <div class="dot3"></div>
+                        <div class="dot"></div>
                         <svg>
                             <circle cx="70" cy ="70" r="70"></circle>
                             <circle cx="70" cy ="70" r="70"></circle>
@@ -115,13 +126,14 @@
             </div>
                 </div>
         </div>
+       
         <!-- 프로젝트1 -->
         <div id="project_1">
             <div class="in_project_1">
                <ul class="list">
-                <a href="#"><li class="pro1">
+                <a href="https://yms2.github.io/MMM/main/"><li class="pro1">
                     <p>Front-end</p>
-                    <p>web page  renewal</p>
+                    <p>web page renewal</p>
                     <span>MMM</span>
                     <p class="day">MAY</p>
                     <p class="day">2022</p>
@@ -132,13 +144,12 @@
                     <p>J-Query</p>
                 </li>
                 <a href="#"><li class="pro3"></li></a>
-                <li class="pro4"></li>
+                <li class="pro4"></li>                      
                 <a href="#"><li class="pro5"></li></a>
                 <li class="pro6"></li>
                 <a href="#"><li class="pro7"></li></a>
                 <li class="pro8"></li>
                </ul>
-         
             </div>
         </div>
         <!-- 마무리 -->
@@ -160,7 +171,7 @@
         $(function(){
             $(window).scroll(
             function(){
-            var	windowTop =$(window).scrollTop()+300;
+            let	windowTop =$(window).scrollTop()+300;
             $("#q_mn").stop().animate({top:windowTop+"px" },500);
             //$("#q_mn").stop().animate({속성:"속성값", 속성:"속성값" },1000);	
                 }
@@ -169,17 +180,17 @@
     </script>    
         <script>
             $(function(){
-                var menu = $('.nav > li');
-                var contents = $('#wrap > div');  
+                let menu = $('.nav > li');
+                let contents = $('#wrap > div');  
     
                 $('.nav> li').click(function(event){
                     event.preventDefault();
                     
-                    var tg = $(this);
-                    var i = tg.index();
+                    let tg = $(this);
+                    let i = tg.index();
                     
-                    var section = $('#wrap > div').eq(i);
-                    var tt = section.offset().top;
+                    let section = $('#wrap > div').eq(i);
+                    let tt = section.offset().top;
                     
                     $('html, body').stop().animate({scrollTop:tt});
                 });

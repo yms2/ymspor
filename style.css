@@ -58,10 +58,15 @@
 #profile .in_profile{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: top;
     width: 1300px;
-    height: 550px;
+    height: 850px;
+    background-color: #cacaca;
     border: 1px solid rgb(29, 28, 28);
+}
+#profile .in_profile .p1 p{
+    margin: 20px 0 0 20px;
+    font-size: 20px;
 }
 #profile .p1{
     float: left;
@@ -81,7 +86,8 @@
     margin-top: 80px;
     font-size: 35px;
 }
-
+#profile .archiving{
+}
 #profile .p2{
     float: right;
     width: 800px;
@@ -91,6 +97,9 @@
 }
 #profile .p2 p{
     margin-top: 70px;
+}
+
+#archiving{
 }
 #skill{
     display: flex;
