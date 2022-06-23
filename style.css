@@ -130,7 +130,7 @@
     align-items: center;
 }
 #skill .in_skill{
-    width: 1300px;height:740px;
+    width: 900px;height:740px;
     font-size: 30px;
 }
 #skill .in_skill h2{
@@ -286,13 +286,13 @@
 
 
 
-#project_1{}                                             
-#project_1 .in_project_1{display: flex; justify-content: center; align-items: center;}
-#project_1 .list{ 
+#project{}                                             
+#project .in_project{display: flex; justify-content: center; align-items: center;}
+#project .list{ 
     float: left;
     width: 1410px;height:600px;
     }
-#project_1 .list .pro1{
+#project .list .pro1{
     position: relative;
     z-index: 1;
     float: left;
@@ -300,31 +300,31 @@
     background-color: #309ad3;
     color: white;
 }
-#project_1 .list .pro1 span{
+#project .list .pro1 span{
     margin-left: 50px;
     font-size: 70px;
     line-height: 180px;
 }
-#project_1 .list .pro1 p{
+#project .list .pro1 p{
     margin-top: 10px;
     font-size: 14px;
     text-align: end;
     margin-right: 15px;
 }
-#project_1 .list .pro2{
+#project .list .pro2{
     float: left;
     margin-left: -90px;
     width: 290px;height: 290px;border-radius: 50%;
     background-color: #020202;
     border: 5px solid #C13E3E;
 }
-#project_1 .list .pro2 p{
+#project .list .pro2 p{
     text-align: center;
     margin-top: 53px;
     font-size: 20px;
     color: white;
 }
-#project_1 .list .pro3{
+#project .list .pro3{
     position: relative;
     z-index: 1;
     float: left;
@@ -332,13 +332,13 @@
     width: 300px;height: 300px;
     background-color: #BFBFBF;
 }
-#project_1 .list .pro4{
+#project .list .pro4{
     float: left;
     margin-left: -90px;
     width: 300px;height: 300px;border-radius: 50%;
     background-color: #ffffff;
 }
-#project_1 .list .pro5{
+#project .list .pro5{
     position: relative;
     z-index: 1;
     margin-left:300px;
@@ -346,13 +346,13 @@
     width: 300px;height: 300px;
     background-color: #BFBFBF;
 }
-#project_1 .list .pro6{
+#project .list .pro6{
     float: left;
     margin-left: -90px;
     width: 300px;height: 300px;border-radius: 50%;
     background-color: #ffffff;
 }
-#project_1 .list .pro7{
+#project .list .pro7{
     position: relative;
     z-index: 1;
     float: left;
@@ -360,7 +360,7 @@
     width: 300px;height: 300px;
     background-color: #BFBFBF;
 }
-#project_1 .list .pro8{
+#project .list .pro8{
     float: left;
     margin-left: -90px;
     width: 300px;height: 300px;border-radius: 50%;
