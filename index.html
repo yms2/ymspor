@@ -23,7 +23,7 @@
                     <h2>
                         YU MIN SEUNG PORTFOLIO
                     </h2>
-                    <p>Front-End & Back-End Developer</p>   
+                    <p>Front-End Developer</p>   
             </div>
             <div class="menu">
                 <p>ABOUT <a href="#">소개</a></p>
@@ -155,11 +155,11 @@
                 </div>
         </div>
        
-        <!-- 프로젝트1 -->
-        <div id="project_1">
-            <div class="in_project_1">
+        <!-- 프로젝트 -->
+        <div id="project">
+            <div class="in_project">
                <ul class="list">
-                <a href="https://yms2.github.io/MMM/main/"><li class="pro1">
+                <a href="javascript:showPopUp()"><li class="pro1">
                     <p>Front-end</p>
                     <p>web page renewal</p>
                     <span>MMM</span>
@@ -227,32 +227,22 @@
                     
                     $('html, body').stop().animate({scrollTop:tt});
                 });
-                //메뉴에 addclass를 적용
-                // $(window).scroll(function(){
-                //     var sct = $(window).scrollTop();
-                    
-                //     $('#wrap > div').each(function(){
-                //         var tg = $(this);
-                //         var i = tg.index();
-                //         if(tg.offset().top <= sct){
-                //             $('.nav > li').removeClass('on');
-                //             $('.nav > li').eq(i).addClass('on');
-                //     }
-                // });
-                // $(window).scroll(function(){
-                // var sct = $(window).scrollTop();
-                
-                // contents.each(function(){
-                //     var tg = $(this);
-                //     var i = tg.index();
-                //     if(tg.offset().top <= sct){
-                //         menu.removeClass('on');
-                //         menu.eq(i).addClass('on');
-                //     }
-                // });
-    
-    
             });
+        </script>
+        <script type="text/javascript">
+            function showPopUp(){
+
+                let width = 1000;
+                let height = 1500;
+
+                let left = (window.screen.width / 2) - (width/2)
+                let top = (window.screen.height / 4)
+
+                let windowStatus = 'width='+width+', height='+height+', left='+left+',top='+top+', scrollbars=yes, status=yes, resizable=yes titlory= yes'
+                const url = "https://yms2.github.io/MMM/main/"
+                
+                window.open(url,"hello popup",windowStatus)
+            }
         </script>
 </body>
 </html>
