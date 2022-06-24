@@ -324,6 +324,25 @@
     font-size: 20px;
     color: white;
 }
+#project .list .pro2 span{
+    display: none;
+}
+#project .list .pro2:hover{
+   background-color: white;
+   transition-duration: 0.3s;
+   color: black;
+   
+}
+#project .list .pro2:hover p{
+    display: none;
+}
+#project .list .pro2:hover span{
+    font-size: 15px;
+    margin-top: 110px;
+    margin-left: 85px;
+    display: block;
+    color: black;
+}
 #project .list .pro3{
     position: relative;
     z-index: 1;
