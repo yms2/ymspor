@@ -354,13 +354,38 @@
     float: left;
     margin-left: 90px;
     width: 300px;height: 300px;
-    background-color: #BFBFBF;
+    color: white;
+    background-color: #6ac76a;
+    transition: all 0.2s linear;
+}
+#project .list .pro3 span{
+    margin-left: 20px;
+    font-size: 70px;
+    line-height: 180px;
+}
+#project .list .pro3 p{
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: end;
+    margin-right: 15px;
+}
+#project .list .pro3:hover{
+    transform: scale(1.04);
+    z-index: 3;
 }
 #project .list .pro4{
     float: left;
     margin-left: -90px;
-    width: 300px;height: 300px;border-radius: 50%;
+    width: 290px;height: 290px;border-radius: 50%;
     background-color: #ffffff;
+    border: 5px solid #C13E3E;
+}
+#project .list .pro4 p{
+    text-align: center;
+    line-height: 290px;
+    font-size: 20px;
+    color: rgb(19, 16, 16);
+    font-weight: 700;
 }
 #project .list .pro5{
     position: relative;
